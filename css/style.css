@@ -1,3 +1,5 @@
+/*                                          STYLE */
+
 @font-face { 
       font-family: 'WebSymbolsLigaRegular';
       src: url('../fonts/websymbolsligaregular.woff') format('woff'),
@@ -26,15 +28,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
 }
 
 .row:after {
-    content: "";
-    clear: both;
     display: block;
+    clear: both;
+    content: "";
 }
 
 .row > div {
     float: left;
-    padding: 0 15px;
     box-sizing: border-box;
+    padding: 0 15px;
 }
 
 .col-1 { width: 8.33%; }
@@ -54,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
 .col-offset-2 { margin-left: 16.66%; }
 .col-offset-3 { margin-left: 25%; }
 .col-offset-4 { margin-left: 33.33%; }
-.col-offset-5 { margin-left: 41%.66; }
+.col-offset-5 { margin-left: 41.66%; }
 .col-offset-6 { margin-left: 50%; }
 .col-offset-7 { margin-left: 58.33%; }
 .col-offset-8 { margin-left: 66.66%; }
@@ -75,8 +77,8 @@ input, a {
 .section-title-left, .section-title-center {
 	position: relative;
 	margin-bottom: 50px;
-	font-size: 32px;
     color: #444;
+	font-size: 32px;
 }
 
 .section-title-center {
@@ -104,20 +106,20 @@ input, a {
 }
 
 .section-text {
-    color: #444;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
     padding-top: 12px;
     padding-bottom: 15px;
+    color: #444;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 
 /*                                         header */
 .header, .footer {
-	background-color: #2c2c2c;
     padding-top: 23px;
     padding-bottom: 22px;
+	background-color: #2c2c2c;
 }
 
 .header a, .footer a {
@@ -126,15 +128,15 @@ input, a {
 }
 
 .logo {
+    float: left;
 	font-weight: 400;
 	font-size: 22px;
-    float: left;
 }
 
 .main-nav {
     float: right;
-    width: 750px;
     margin-top: 3px;
+    width: 750px;
 }
 
 .main-nav ul {
@@ -165,35 +167,35 @@ input, a {
 .promo {
 	position: relative;
 	padding-top: 174px;
+    padding-bottom: 35px;
 	background: url('../img/bg_promo-block.jpg') no-repeat 50% 0;
 	background-size: cover;
     text-align: center;
-    padding-bottom: 35px;
 }
 
 .promo-title {
 	color: #fff;
-	font-size: 66px;
     font-weight: 500;
+	font-size: 66px;
 }
 
 .promo-btn {
 	position: relative;
 	display: inline-block;
 	margin: 180px 0 64px;
-    max-width: 300px;
     padding: 5px 12px;
-    line-height: 27px;
+    max-width: 300px;
 	border: 1px solid  #fff;
 	color: #fff;
 	text-decoration: none;
-    font-size: 18px;
     word-wrap: break-word;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .promo-btn:hover {
-	color: #e6e6e6;
     border-color: #e6e6e6;
+	color: #e6e6e6;
 }
 
 .promo-btn:after {
@@ -217,20 +219,20 @@ input, a {
 }
 
 .advantage-text {
+    padding-top: 8px;
+    padding-left: 92px;
+    word-wrap: break-word;
 	font-weight: 700;
     font-size: 18px;
-    padding-left: 92px;
-    padding-top: 8px;
-    word-wrap: break-word;
 }
 
 .advantage-like:before, .advantage-glasses:before, .advantage-photo:before, .advantage-binoculars:before {
-    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
     width: 100px;
     height: 100px;
-    position: absolute;
-    left: 10px;
-    top: 0;
+    content: "";
 }
 
 .advantage-like:before {
@@ -282,6 +284,11 @@ input, a {
     margin-top: 7px;
 }
 
+.video-wrap iframe {
+    border: none;
+    box-shadow: 0 20px 0px -10px #e6e6e6;
+}
+
 
 /*                                         gallery */
 .gallery {
@@ -291,8 +298,8 @@ input, a {
 .slider {
 	position: relative;
 	margin: 0 auto;
-	width: 1140px;
     padding-top: 36px;
+	width: 1140px;
 }
 
 .carousel {
@@ -302,9 +309,9 @@ input, a {
 
 .prev, .next {
 	position: absolute;
+	top: 50%;
     width: 25px;
     height: 35px;
-	top: 50%;
     cursor: pointer;
 }
 
@@ -330,11 +337,11 @@ input, a {
 
 /*                                         how-it-works */
 .how-it-works {
+    padding-top: 45px;
 	min-height: 705px;
 	background: url('../img/fly-line.png') no-repeat 50% 303px,
 				url('../img/bg_mountains.jpg') no-repeat 50% 100%;
 	background-size: auto, contain;
-    padding-top: 45px;
 }
 
 .how-it-works-wrap {
@@ -346,11 +353,11 @@ input, a {
 	position: absolute;
 	min-height: 100px;
 	width: 100px;
+    color: #454545;
+    text-align: center;
 	font-weight: 500;
     font-size: 18px;
-    color: #454545;
 	line-height: 26px;
-    text-align: center;
 }
 
 .how-it-works-item1 {
@@ -392,12 +399,12 @@ input, a {
 
 /*                                         timer */
 .timer {
+    padding-top: 35px;
+    padding-bottom: 30px;
 	background-color: #f2f2f2;
 	color: #26668e;
 	font-weight: 500;
 	font-size: 32px;
-    padding-top: 35px;
-    padding-bottom: 30px;
 }
 
 .count-title {
@@ -447,9 +454,9 @@ input, a {
 label {
 	display: inline-block;
 	width: 196px;
-	line-height: 40px;
-    font-size: 18px;
     color: #444;
+    font-size: 18px;
+	line-height: 40px;
 }
 
 .cost-form select, .cost-form input {
@@ -496,16 +503,16 @@ input[name="phone"] {
 }
 
 .cost-form-btn {
+    float: right;
 	width: 165px;
 	height: 40px;
+    outline: none;
 	border: none;
 	border-radius: 5px;
 	background-color: #46b0dc;
 	color: #fff;
 	font-weight: 400;
     font-size: 18px;
-    float: right;
-    outline: none;
 }
 
 .cost-form-btn:hover {
@@ -544,8 +551,8 @@ input[name="phone"] {
     margin: 6px 0 10px 5px;
 	vertical-align: middle;
 	font-weight: 500;
-	line-height: 24px;
     font-size: 18px;
+	line-height: 24px;
 }
 
 .question-title:before {
@@ -573,8 +580,8 @@ input[name="phone"] {
 	background: url('../img/bg_statistics.jpg') no-repeat 50% 0;
 	background-size: cover;
 	color: #fff;
-	font-weight: 500;
     text-align: center;
+	font-weight: 500;
 }
 
 .number-circle {
@@ -609,6 +616,7 @@ input[name="phone"] {
 	margin: 0 auto;
 	width: 160px;
 	height: 160px;
+    border-radius: 50%;
 }
 
 .member-avatar:hover {
@@ -656,6 +664,10 @@ input[name="phone"] {
     margin-top: 30px;
 }
 
+.review-item img {
+    border-radius: 50%;
+}
+
 .review-item cite {
 	display: inline-block;
 	padding: 21px 0;
@@ -692,8 +704,8 @@ input[name="phone"] {
 .airport-adress {
 	padding-top: 10px;
 	font-weight: 500;
-	line-height: 26px;
     font-size: 18px;
+	line-height: 26px;
 }
 
 .airport-title:before {
@@ -780,4 +792,114 @@ input[name="phone"] {
 	width: 28px;
 	height: 28px;
 	background: url('../img/arrow-up.svg') no-repeat;
+}
+
+
+/*                                          SLICK-SLIDER */
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    min-height: 1px;
+    height: 100%;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
 }
