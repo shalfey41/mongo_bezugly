@@ -1,4 +1,4 @@
 # Монгольфьеркин и КО
 Фронт-энд, лендинг-пейдж
 
-[Посмотреть сайт](http://bezugly.ru/mongo_bezugly)
+[Посмотреть сайт](http://bezugly.ru/mongo-bezugly)
